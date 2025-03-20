@@ -1,62 +1,62 @@
-# Hotspot Uygulaması
+# Hotspot Application
 
-Bu proje, basit bir hotspot giriş sistemi sunar. Kullanıcılar, kimlik bilgilerini girerek NVI (Nüfus ve Vatandaşlık İşleri) Mernis servisine bir sorgu gönderir. Eğer bilgiler doğrulanırsa, kullanıcı ana sayfaya yönlendirilir. Projenin temel amacı, güvenli ve hızlı bir kimlik doğrulama mekanizması sağlamaktır.
+This project provides a simple hotspot login system. Users enter their identity information, which sends a query to the NVI (Population and Citizenship Affairs) Mernis service. If the information is verified, the user is redirected to the main page. The primary goal of this project is to offer a secure and fast identity verification mechanism.
 
-## Özellikler
-- Kullanıcı dostu arayüz
-- NVI Mernis servisi ile kimlik doğrulama
-- Başarılı giriş sonrası ana sayfaya yönlendirme
-- Basit ve hızlı yapı
+## Features
+- User-friendly interface
+- Identity verification via NVI Mernis service
+- Redirect to the main page upon successful login
+- Simple and efficient structure
 
-## Kurulum
+## Installation
 
-1. **Depoyu Klonlayın:**
+1. **Clone the Repository:**
    git clone https://github.com/mehmetberkekeceli/hotspot.git
 
-2. **Proje Dizinine Gidin:**
+2. **Navigate to the Project Directory:**
    cd hotspot
 
-3. **Gerekli Bağımlılıkları Yükleyin:**
-   Projenizde hangi teknolojileri kullandığınıza bağlı olarak (örneğin Node.js, Python vb.), bağımlılıkları yüklemek için aşağıdaki komutlardan uygun olanı çalıştırın:
-   npm install  # Eğer Node.js kullanıyorsanız
-   # veya
-   pip install -r requirements.txt  # Eğer Python kullanıyorsanız
+3. **Install Dependencies:**
+   Depending on the technologies used in your project (e.g., Node.js, Python, etc.), run the appropriate command to install dependencies:
+   npm install  # If using Node.js
+   # or
+   pip install -r requirements.txt  # If using Python
 
-4. **Yapılandırma:**
-   - NVI Mernis servisine bağlanmak için gerekli API anahtarlarını veya kimlik doğrulama bilgilerini bir `.env` dosyasına ekleyin. Örnek:
+4. **Configuration:**
+   - Add the necessary API keys or authentication details for connecting to the NVI Mernis service in a `.env` file. Example:
      NVI_API_KEY=your_api_key
      NVI_ENDPOINT=https://mernis-api-url
 
-5. **Uygulamayı Çalıştırın:**
-   npm start  # Node.js için
-   # veya
-   python app.py  # Python için
+5. **Run the Application:**
+   npm start  # For Node.js
+   # or
+   python app.py  # For Python
 
-## Kullanım
-1. Uygulamayı başlatın.
-2. Giriş ekranında kimlik bilgilerinizi (örneğin TC Kimlik No ve diğer gerekli bilgiler) girin.
-3. Bilgiler NVI Mernis servisine gönderilir ve doğrulanırsa ana sayfaya yönlendirilirsiniz.
+## Usage
+1. Start the application.
+2. Enter your identity information (e.g., Turkish ID number and other required details) on the login screen.
+3. The information is sent to the NVI Mernis service, and if verified, you will be redirected to the main page.
 
-## Gereksinimler
-- [Node.js](https://nodejs.org/) (veya projenize uygun diğer bir runtime)
-- NVI Mernis servisine erişim (API anahtarı veya yetkilendirme)
-- İnternet bağlantısı
+## Requirements
+- [Node.js](https://nodejs.org/) (or another runtime suitable for your project)
+- Access to the NVI Mernis service (API key or authorization)
+- Internet connection
 
-## Katkıda Bulunma
-Bu projeye katkıda bulunmak isterseniz:
-1. Depoyu fork edin.
-2. Yeni bir özellik veya hata düzeltmesi için bir dal (branch) oluşturun:
-   git checkout -b feature/yeni-ozellik
-3. Değişikliklerinizi yapın ve commit edin:
-   git commit -m "Yeni özellik eklendi"
-4. Dalınızı ana depoya push edin ve bir Pull Request açın.
+## Contributing
+If you'd like to contribute to this project:
+1. Fork the repository.
+2. Create a branch for a new feature or bug fix:
+   git checkout -b feature/new-feature
+3. Make your changes and commit them:
+   git commit -m "Added new feature"
+4. Push your branch to the main repository and open a Pull Request.
 
-## Lisans
-Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakabilirsiniz.
+## License
+This project is licensed under the [MIT License](LICENSE). See the `LICENSE` file for more details.
 
-## İletişim
-Sorularınız veya önerileriniz için:  
-- E-posta: [mehmetberkekeceli@example.com](mailto:berke.keceli96@gmail.com)  
+## Contact
+For questions or suggestions:  
+- Email: [mehmetberkekeceli@example.com](mailto:berke.keceli96@gmail.com)  
 - GitHub: [mehmetberkekeceli](https://github.com/mehmetberkekeceli)
 
 - Login =>
