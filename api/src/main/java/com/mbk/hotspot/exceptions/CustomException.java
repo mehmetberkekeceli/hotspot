@@ -1,5 +1,6 @@
 package com.mbk.hotspot.exceptions;
 
+@SuppressWarnings("unused")
 public class CustomException extends RuntimeException {
     private final String message;
 
