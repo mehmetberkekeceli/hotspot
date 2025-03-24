@@ -4,8 +4,9 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import LoginForm from "../components/LoginForm";
+import LoginForm from "../components/login/LoginForm";
 import Dashboard from "../pages/Dashboard";
+import Footer from "../components/login/footer/Footer";
 
 const PrivateRoute = ({ children }: { children: JSX.Element }) => {
   const token = localStorage.getItem("token");
@@ -17,9 +18,7 @@ const AppRoutes = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Navigate to="/login" />} />
-
         <Route path="/login" element={<LoginForm />} />
-
         <Route
           path="/dashboard"
           element={
@@ -29,6 +28,7 @@ const AppRoutes = () => {
           }
         />
       </Routes>
+      <Footer />
     </Router>
   );
 };

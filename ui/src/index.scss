@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Material-UI comps and global styles. */
+.MuiOutlinedInput-root {
+  color: #e0e1dd;
+}
+
+.MuiInputLabel-root {
+  color: #e0e1dd;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #415a77;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #00e676;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #00e676;
+}
+
+.MuiButton-root {
+  border-radius: 12px;
+  text-transform: none;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.MuiButton-containedPrimary {
+  background-color: #00e676;
+  color: #0d1b2a;
+  box-shadow: 0 4px 15px rgba(0, 230, 118, 0.3);
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #00c853;
+}

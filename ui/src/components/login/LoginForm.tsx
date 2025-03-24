@@ -10,10 +10,11 @@ import {
   InputAdornment,
 } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
-import { validateUser } from "../services/authService";
+import { validateUser } from "../../services/authService";
 import { useDispatch } from "react-redux";
-import { login } from "../redux/slices/authSlice";
+import { login } from "../../redux/slices/authSlice";
 import { useNavigate } from "react-router-dom";
+import "./loginForm.scss";
 
 const LoginForm: React.FC = () => {
   const [tcKimlikNo, setTcKimlikNo] = useState("");
@@ -39,32 +40,12 @@ const LoginForm: React.FC = () => {
   };
 
   return (
-    <Container
-      maxWidth="xs"
-      sx={{
-        height: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <Paper
-        elevation={6}
-        sx={{
-          padding: 3,
-          borderRadius: 3,
-          width: "100%",
-          textAlign: "center",
-        }}
-      >
-        <Typography variant="h5" fontWeight="bold" gutterBottom>
+    <Container className="container" maxWidth="xs">
+      <Paper className="paper">
+        <Typography variant="h5" className="title">
           Hotspot Giriş
         </Typography>
-        {error && (
-          <Typography color="error" sx={{ mb: 2 }}>
-            {error}
-          </Typography>
-        )}
+        {error && <Typography className="error">{error}</Typography>}
         <form onSubmit={handleSubmit}>
           <TextField
             label="TC Kimlik No"
@@ -78,7 +59,10 @@ const LoginForm: React.FC = () => {
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
-                  <IconButton onClick={() => setShowTc(!showTc)}>
+                  <IconButton
+                    onClick={() => setShowTc(!showTc)}
+                    className="iconButton"
+                  >
                     {showTc ? <VisibilityOff /> : <Visibility />}
                   </IconButton>
                 </InputAdornment>
@@ -113,7 +97,7 @@ const LoginForm: React.FC = () => {
             onChange={(e) => setDogumYili(e.target.value)}
             required
           />
-          <Box mt={2}>
+          <Box>
             <Button type="submit" variant="contained" color="primary" fullWidth>
               Giriş Yap
             </Button>
