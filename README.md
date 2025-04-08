@@ -56,8 +56,8 @@ This project is licensed under the [MIT License](LICENSE). See the `LICENSE` fil
 
 ## Contact
 For questions or suggestions:  
-- Email: [mehmetberkekeceli@example.com](mailto:berke.keceli96@gmail.com)  
-- GitHub: [mehmetberkekeceli](https://github.com/mehmetberkekeceli)
+- Email: [berke.keceli96@gmail.com](mailto:berke.keceli96@gmail.com)  
+- GitHub: [berke.keceli96@gmail.com](https://github.com/mehmetberkekeceli)
 
 - Login =>
 - ![Login](https://github.com/user-attachments/assets/9dd8d463-1918-47dc-bc03-10e9522c7dc0)
